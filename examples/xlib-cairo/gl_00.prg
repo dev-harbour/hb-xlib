@@ -37,7 +37,7 @@ PROCEDURE Main()
 
    win := XCreateWindow( dpy, root, 0, 0, width, height, 0, XDefaultDepth( dpy, screen ), InputOutput, visual, hb_bitOr( CWEventMask, CWColormap ), @swa )
 
-   XStoreName( dpy, win, "Xlib .AND. Cair" )
+   XStoreName( dpy, win, "Xlib .AND. Cairo" )
    XMapWindow( dpy, win )
 
    sfc := cairo_xlib_surface_create( dpy, win, visual, width, height )
